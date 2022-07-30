@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Nanum+Pen+Script&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Pen Script', cursive;
+    /* font-family: 'Archivo', sans-serif; */
+    /* font-family: 'Nanum Pen Script', cursive; */
+    font-family: 'Space Grotesk', sans-serif;
+}
+:root{
+    --primary-color : hsla(54,100%,92%,100%);
+    --secondary-color: #112240;
+    --secondary2-color: rgba(17, 34, 64, 0.264)0;
+
+}
+.container{
+    background-color: var(--primary-color);
+    width: 60%;
+    height: 100vh;
+    margin : auto;
+    text-align: center;
+}
+.container h1{
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+    padding-top: 2.5rem ;
+    /* margin-bottom: 2.5rem; */
+}
+
+.container p{
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 4rem;
+}
+
+.primebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#input-value{
+    width: 17rem;
+    height: 3.5rem;
+    margin: 2rem 0;
+    padding: 0 1.5rem;
+    border-radius:2rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+#check-button{
+    width: 17rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    border-radius:2rem;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    color: wheat;
+    font-size: 1rem;
+}
+
+#output-answer{
+    margin: 3rem 0;
+    color: var(--secondary-color);
+}
+
+.footer{
+    position: sticky;
+    top: 100%;
+    margin-bottom: 2.5rem;
+}
+
+
+.footer h3{
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+a{  
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: 3px dashed var(--secondary-color);
+}
+
+
+
+/* responsive */
+@media (max-width : 478px){
+    .container{
+      width: 98%;
+    }
+
+    .container h1{
+        font-size: 2rem;
+        padding-top: 2.5rem ;
+        padding-top: 1rem;
+    }
+
+    .container p{
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 4rem;
+        padding-bottom: 1.8rem;
+        font-weight: 500;
+        border-bottom: 1.8px solid var(--secondary-color);
+    }
+
+    #output-answer{
+       font-size: 1.5rem;
+    }
+
+    .footer{
+        padding-top: 1.8rem;
+        border-top: 1.8px solid var(--secondary-color);
+        margin-bottom: 1.8rem;
+    }
+
+    .footer h3{
+        font-size: 1.5rem;
+    }
+
+}
