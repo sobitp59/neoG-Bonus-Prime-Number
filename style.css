@@ -98,7 +98,7 @@ a{
 /* responsive */
 @media (max-width : 478px){
     .container{
-      width: 98%;
+      width: 100%;
     }
 
     .container h1{
