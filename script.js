@@ -14,11 +14,11 @@ let checkPrime = (number) => {
     isPrime = true
 
     if(number == ''){
-        output.textContent = 'please enter a number'
+        output.textContent = 'please enter your birth date'
     }
 
-    if(number < 0 || number === 0){
-        output.textContent = 'enter number greater than zero'
+    if(number < 1 || number > 31){
+        output.textContent = 'enter a valid birth date'
     }
 
     if(number === 1){
