@@ -26,7 +26,7 @@ let checkPrime = (number) => {
     }
     
     
-    if(number > 1){
+    if(number > 1 && number < 32 ){
         for(let i = 2; i < number; i++){
             if(number%i===0){
                 isPrime = false
